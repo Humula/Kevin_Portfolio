@@ -1,0 +1,82 @@
+/*
+  STYLING FOR THE CRATE CHECKOUT PAGE
+  Default styling for crate checkout page
+*/
+
+/*
+T-Shirt Placeholder Image: http://pixel.nymag.com/imgs/fashion/daily/2016/04/28/white-t-shirt-e-comm/alexander-chee.w710.h473.2x.jpg
+*/
+
+.checkout-info-left-container {
+  position: relative;
+}
+
+.checkout-info-right-container {
+  position: relative;
+}
+
+@media (min-width: 73em) {
+
+  .checkout-info-right-container {
+    padding-left: 2rem;
+  }
+}
+
+.cart-item {
+  height: 15rem;
+}
+
+/* Styling for Input Fields */
+.input-fields {
+  justify-content: space-between;
+}
+ 
+.input-fields label {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Styling for Order */
+.order-total {
+  text-align: left;
+  color: #d2722d;
+}
+ 
+/* font styling for input text and passwords */
+input[type='text'],
+input[type='password'] {
+  font-size: 16px;
+  height: 50px;
+  width: 90%;
+  color: black;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 4px;
+  outline: none;
+}
+ 
+/* Changes border for input fields when they are focused */
+input[type='text']:focus,
+input[type='password']:focus {
+  border-color: rgb(119, 219, 119);
+}
+
+/* Styling for input fields */ 
+.small-inputs {
+  display: block;
+  margin-top: 1rem;
+  justify-content: space-between;
+  width: 20rem;
+}
+
+.panel-footer {
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-button {
+  display: inline-block;
+  margin: 1rem 1rem 0 0;
+}

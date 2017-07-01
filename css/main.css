@@ -1,0 +1,394 @@
+/*
+  STYLING FOR THE HOME PAGE
+  Default styling for home page elements 
+*/
+
+a {
+	text-decoration: none;
+}
+
+img {
+	height: auto; 
+	max-width: 100%;
+}
+
+.img-home {
+	height: auto; 
+	max-width: 100%;
+}
+
+.img-featured {
+	height: auto; 
+	max-width: 100%;
+}
+
+/*
+Banner Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/packaging.jpg?resize=815%2C489&ssl=1
+*/
+.banner-container {
+	height: 30rem;
+	width: 100%;
+	max-width: 100%;
+	background-image: url("../img/banner.jpg");
+	background-size: cover;
+}
+
+.banner-info-container {
+	position: relative;
+	background-color: rgba(30,30,30,.9);
+	height: auto;
+	width: 70%;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 2% 2% 7% 2%;
+}
+
+.banner-spacer {
+	margin-bottom: 2rem;
+}
+
+.home-product-container {
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	position: relative;
+}
+
+.home-product-image {
+	height: 20rem;
+}
+
+@media (min-width: 73em) {
+
+	.column-container-text {
+		margin: 0 5rem;
+	}
+}
+
+.button-top-spacer {
+	display: block;
+}
+
+.top-fix {
+	padding-top: 0.3rem;
+}
+
+.about-container {
+	position: relative;
+	margin-top: 2rem;
+	background-color: white;
+}
+
+/*
+About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab76eccbbd99feec6fc3f6bc.jpg
+*/
+.about-image {
+	height: 21.5rem;
+	width: 100%;
+	background-image: url("../img/about-banner.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.about-container-text {
+	margin: 2rem;
+	color: #333333;
+}
+
+/*
+  Header styling elements
+  Reference for fixed to top scrolling header: http://cssreset.com/creating-fixed-headers-with-css/
+*/
+.header-container {
+	position: fixed;
+	top: 0;
+	height: auto; /*Height of the header*/
+	width: 100%;
+	z-index: 1;
+}
+
+.main-nav-container {
+	background-size: 100px 100px;
+	width:100%;
+	height:100%;
+	background-image: url("../img/Dark-Wood-Panels.jpg");
+	text-align: center;
+}
+
+.header-link-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.header-icon {
+	vertical-align: middle;
+	height: 4.5rem;
+	margin-top: 0.25rem;
+}
+
+.main-nav-header {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 2rem;
+	margin-top: 0.4rem;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+@media (min-width: 73em) {
+
+	.main-nav-header {
+		margin-left: 5rem;
+	}
+}
+
+.main-nav-header-left {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+.main-nav-header:hover, .main-nav-header:focus {
+	text-decoration: underline;
+}
+
+.main-nav-header-left:hover, .main-nav-header-left:focus {
+	text-decoration: underline;
+}
+
+
+/*Body styling elements*/
+.page-container {
+	min-height: 100%;
+  	position: relative;
+  	color: white;
+}
+
+.body-container {
+	height: 100%;
+	margin-top: 4.7rem; /*Height of the header*/
+	padding-bottom: 10rem; /*Height of the footer*/
+	background-color: #1e1e1e;
+}
+
+.wrapper {
+	padding: 0 10%;
+}
+
+
+/*
+  Footer styling elements
+  Reference for locked to bottom footer: http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page
+  Footer social media badges: https://www.iconfinder.com/iconsets/free-social-media-set	
+*/
+.footer-container {
+	position: absolute;
+	bottom: 0;
+	height: auto; /*Height of the footer*/
+	width: 100%;
+	background-color: #000;
+}
+
+.main-footer-nav-container {
+	width:100%;
+	text-align: center;
+}
+
+.footer-content-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.footer-text {
+	position: relative;
+	color: white;
+	text-decoration: none;
+	vertical-align: middle;
+	display: inline;
+}
+
+.footer-icon {
+	height: 2rem;
+	width: 2rem;
+	margin: 0;
+	vertical-align: middle;
+}
+
+@media (min-width: 73em) {
+
+	.footer-icon {
+		margin: 0 0.5rem;;
+	}
+}
+
+/*
+StyleGuide Styling
+*/
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.main-nav-header-example {
+	color: white;
+	padding: 1rem;
+	text-decoration: none;
+	background-size: 30px 30px;
+	background-image: url("../img/Dark-Wood-Panels.jpg");
+}
+
+.main-nav-header-example:hover, .main-nav-header-example:focus {
+	text-decoration: underline;
+}
+
+.basic-button {
+	color: white;
+	background-color: #d2722d;
+	padding: 1rem 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+  	border-radius: 7px;
+}
+
+.basic-button:hover, .basic-button:focus {
+	background-color: #af5c20;
+} 
+
+.basic-button2 {
+	color: white;
+	background-color: #464646;
+	padding: 1rem 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+  	border-radius: 7px;
+}
+
+.basic-button2:hover, .basic-button2:focus {
+	background-color: #1e1e1e;
+} 
+
+
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+body {
+	font-family: "Arial", arial, sans-serif;
+}
+
+h1 {
+	font-family: "Impact", arial, sans-serif;
+	font-weight: normal;
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+@media (min-width: 73em) {
+
+	h1 {
+		font-size: 2rem;
+	}
+}
+
+h2 {
+	font-family: "Arial", arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-family: "Arial", arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.35rem;
+}
+
+p {
+	font-family: "Arial", arial, sans-serif;
+	font-weight: normal;
+}
+
+.explanation-text {
+	color: grey;
+	display: inline;
+}
+
+.text-content {
+	color: black;
+	display: inline;
+}
+
+.wireframe {
+	margin: 1rem;
+}
+
+.text-spacer {
+	vertical-align: top;
+	display: inline-block;
+	width: 18%;
+}
+
+.text-spacer-small {
+	vertical-align: top;
+	display: inline-block;
+	width: 32%;
+}
+
+.text-spacer-medium {
+	vertical-align: top;
+	display: inline-block;
+	width: 48%;
+}
+
+.text-spacer-code {
+	vertical-align: top;
+	display: inline-block;
+	width: 60%;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+.text-spacer-large {
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+.text-spacer-image {
+	vertical-align: top;
+	display: inline;
+	width: 100%;
+	position: relative;
+}
+
+.bottom-align {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 1.5rem;
+}

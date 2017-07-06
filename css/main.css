@@ -106,20 +106,6 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
   Default styling for crate list and categories page elements 
 */
 
-/*
-Images for the different categories: 
-Pop Culture/Gaming: https://static.gamespot.com/uploads/original/1551/15511094/2997882-800x800_lootgaming_product_placement_2016.jpg
-Food/Drinks: https://cdn.graze.com/static/18-1498588614/images/graze/en//index/experiment/shop.jpg
-Books: http://popcrush.com/files/2014/11/2014books-630x420.jpg
-Men's Health/Beauty: https://harrysx-a.akamaihd.net/assets/images/hero_images/attachments/50de565b05d97d1fb7d25e6e9a4333ac90b65d6e.
-Women's Health/Beauty: http://www.girlmeetsbox.com/wp-content/uploads/2017/06/yuzenbox.jpg
-Craft/Hobby: https://s3.amazonaws.com/cratejoy_vendor_images/7ff7d54f3cc54d90a454f0658c603db0.jpeg
-*/
-
-/*
-Images for the Pop Culture/Gaming category (Loot Crate, Geek Fuel, Loot Anime, Comic Block, Sci-Fi Block, Mine Chest): http://boxes.mysubscriptionaddiction.com/subscription_boxes_for/geek
-*/
-
 .category-container {
 	margin-top: 2rem;
 	justify-content: center;
@@ -193,6 +179,39 @@ Images for the Pop Culture/Gaming category (Loot Crate, Geek Fuel, Loot Anime, C
 	text-decoration: none;
 	text-align: center;
 	
+}
+
+.main-nav-header-dropdown {
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+	
+}
+
+.main-nav-header-dropdown-container {
+	display: inline-block;
+	margin-left: 2rem;
+	margin-top: 0.4rem;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+.main-nav-header-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.main-nav-header-dropdown a:hover {
+	background-color: #f1f1f1
+}
+
+.main-nav-header:hover .main-nav-header-dropdown {
+    display: block;
 }
 
 .header-right {

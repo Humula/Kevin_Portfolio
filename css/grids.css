@@ -39,12 +39,12 @@
 
 
 
-@media (min-width: 48.75em) {
+@media (min-width: 73em) {
 
 
-	.grid-col-1of4 {
+	.grid-col-1of3 {
 
-		width: 50%;
+		width: 33.3333% !important;
 
 	}
 
@@ -53,7 +53,7 @@
 
 
 
-@media (min-width: 73em) {
+@media (min-width: 53em) {
 
 
 
@@ -67,7 +67,7 @@
 
 	.grid-col-1of3 {
 
-		width: 33.333%;
+		width: 50%;
 
 	}
 

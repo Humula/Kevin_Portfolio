@@ -19,7 +19,7 @@ Image for main Loot Crate Product Image: http://s3.amazonaws.com/digitaltrends-u
   padding-left: 0;
 }
 
-@media (min-width: 73em) {
+@media (min-width: 53em) {
 
   .loot-info-right-container {
     padding-left: 2rem !important;
@@ -61,7 +61,7 @@ Image for main Loot Crate Product Image: http://s3.amazonaws.com/digitaltrends-u
   margin: 1rem 0;
 }
 
-@media (min-width: 73em) {
+@media (min-width: 53em) {
 
   .dropdown-form {
     margin-left: 1rem;

@@ -39,7 +39,7 @@ Images for the Pop Culture/Gaming category (Loot Crate, Geek Fuel, Loot Anime, C
 	display: inline-block;
 }
 
-@media (min-width: 73em) {
+@media (min-width: 53em) {
 
 	.category-title-container {
 		text-align: left;

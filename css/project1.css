@@ -17,14 +17,30 @@ Banner Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/pac
 	max-width: 100%;
 }
 
-.wrapper {
-	padding: 0 10%;
+.intro-text-spacer-left {
+	padding-right: 0rem;
+}
+
+.intro-text-spacer-right {
+	padding-left: 0rem;
 }
 
 @media (min-width: 53em) {
 
 	.wrapper {
 		padding: 0 25%;
+	}
+
+	.wide-wrapper {
+		padding: 0 15%
+	}
+
+	.intro-text-spacer-left {
+		padding-right: 1rem;
+	}
+
+	.intro-text-spacer-right {
+		padding-left: 1rem;
 	}
 
 	.banner-container-project-1 {

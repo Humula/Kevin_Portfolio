@@ -228,11 +228,11 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 
 
 .main-nav-header:hover, .main-nav-header:focus {
-	text-decoration: underline;
+	color: #6DCFF6;
 }
 
 .main-nav-header-left:hover, .main-nav-header-left:focus {
-	text-decoration: underline;
+	color: #6DCFF6;
 }
 
 
@@ -242,7 +242,7 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 		margin-left: 5rem;
 	}
 
-	.hedaer-right {
+	.header-right {
 		margin-right: 2rem;
 	}
 
@@ -276,6 +276,10 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 	padding: 0 10%;
 }
 
+.wide-wrapper {
+	padding: 0 10%;
+}
+
 .portfolio-paragraph-spacer {
 	margin: 3rem 0;
 }
@@ -291,7 +295,7 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 	bottom: 0;
 	height: auto; /*Height of the footer*/
 	width: 100%;
-	background-color: #000;
+	background-color: #111111;
 }
 
 .main-footer-nav-container {
@@ -351,7 +355,7 @@ StyleGuide Styling
 }
 
 .main-nav-header-example:hover, .main-nav-header-example:focus {
-	text-decoration: underline;
+	color: #6DCFF6;
 }
 
 .basic-button {

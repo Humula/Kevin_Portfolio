@@ -3,7 +3,7 @@ Banner Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/pac
 */
 
 .banner-container-project-1 {
-	height: 10rem;
+	height: 15rem;
 	width: 100%;
 	max-width: 100%;
 	background-image: url("../img/project1-1.png");
@@ -28,6 +28,6 @@ Banner Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/pac
 	}
 
 	.banner-container-project-1 {
-		height: 45rem;
+		height: 40rem;
 	}
 }

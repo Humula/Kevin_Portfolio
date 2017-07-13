@@ -51,7 +51,7 @@ form {
 }
 
 .category-fix:hover, .category-fix:focus {
-	color: #d2722d;
+	color: #6DCFF6;
 }
 
 .footer-fix {
@@ -60,7 +60,7 @@ form {
 
 .basic-button {
 	color: white;
-	background-color: #d2722d;
+	background-color: #6DCFF6;
 	padding: 1rem 1.5rem;
 	font-weight: bold;
 	text-decoration: none;

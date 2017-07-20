@@ -3,7 +3,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-		<title>Project 1 Name</title>
+		<title>Havoc Gear</title>
 
 		<link href="css/main.css" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
@@ -15,7 +15,7 @@
 	<body>
 		<div class="page-container">
 
-			<!-- Scrolling Page Header -->
+			<!-- Locked Page Header -->
 			<section id="header">
 			<div class="header-container">
 				<div class="main-nav-container">
@@ -43,8 +43,8 @@
 
 			<div class="body-container">
 
-				<!-- Home page banner that displays basic info -->
-				<section id="home-banner">
+				<!-- Banner for project 2 -->
+				<section id="project2-banner">
 					<div class="grid-row banner-container-project-2">
 					</div>
 				</section>
@@ -54,7 +54,7 @@
 				<div class="grid-row portfolio-paragraph-spacer">
 
 				  <!-- Introduction to this project/overview -->
-			      <section id="project-intro">
+			      <section id="project2-brief">
 			      		<h2>Havoc Gear is a 2D top down shooter, where the player controls the Havoc Gear; a futuristic mech equipped with the patented “Photon Whip” that lets the player steal enemy weapons. </h2>      		
 			      </section>
 
@@ -65,8 +65,8 @@
 
 				<div class="grid-row portfolio-paragraph-spacer">			  
 
-				  <!-- Introduction to this project/overview -->
-			      <section id="project-intro">
+				  <!-- Team members and my role for project/project goal -->
+			      <section id="project2-intro">
 			      	<div class="grid-row">
 			      			<div class="grid-col-1of2 intro-text-spacer-left">
 					      		<h4>Team</h4>
@@ -97,8 +97,8 @@
 
 				  <img class="project-image-container" src="img/project2-2.png" alt="Project 2 Image">
 
-				  <!-- Introduction to this project/overview -->
-			      <section id="project-intro">
+				  <!-- Project brainstorming write up -->
+			      <section id="project2-brainstorming">
 			      		<h4>Process - Brainstorming</h4>
 			      		<p>
 			      		For this project my team and I started off by brainstorming the mechanics that a mech based, top down, 2D shooter might entail. We realized that we wanted to offer the player a variety of weaponry, but were not sure that we wanted to go with the generic method of having the player pick up the weaponry from the ground or out of containers. Thus, we decided to settle on an idea that would become the core of our gameplay loop; the photon whip. The photon whip would allow the player to steal weapons from all of the enemies the player would face, presenting the player with the opportunity to gain new weapons any time they entered combat.
@@ -117,8 +117,8 @@
 
 				<div class="grid-row portfolio-paragraph-spacer">
 
-				  <!-- Introduction to this project/overview -->
-			      <section id="project-intro">
+				  <!-- Project implementation write up -->
+			      <section id="project2-implementation">
 			      		<h4>Process - Implementation</h4>
 			      		<p>
 			      		Once the mechanics had been generally decided upon, I began to work on the level design and a basic game design document. The GDD outlined the basic principles of how the photon whip should work, and some general ideas of the different weaponry the enemies would have (machine gun, grenade launcher, sniper, etc.) Since the game was a top down 2D shooter, I neeeded to consider placement of protective cover and line of sight carefully, as we wanted to avoid the situation where a player would get attacked by an offscreen enemy as much as possible. I began sketching out some concepts of levels, which would include factors such as enemy spawns, secrets, obstacles/cover, and areas where doors would stop player progress. After completing the sketches, I then began to work on developing the tilesets for each of the maps, as another one of my focuses was doing the environmental pixel art for each level I created. Once an initial level and the basic game mechanics were implemented, we began to test the game, and worked to figure out what worked and what didn't.
@@ -134,14 +134,14 @@
 
 				<div class="grid-row portfolio-paragraph-spacer">
 
-				  <!-- Introduction to this project/overview -->
-			      <section id="project-intro">
+				  <!-- Project refining/iteration write up -->
+			      <section id="project2-iteration">
 			      		<h4>Process - Tweaking and Refining</h4>
 			      		<p>
 			      		After our initial round of testing, we realized that there were some concerning problems that we had no anticipated. The first of these was that players would use the photon whip constantly to steal weapons from the enemies so that they were never able to even fire them. The issue here was that the player would have no need to worry about ammo, and the enemy rage state was not threatening enough to the player, as the enemies were not fast enough to reach the player before they would be destroyed. I suggested two possible solutions to this: one was to add a cooldown to the photon whip, while the other was to increase the speed of the enemy when they enetered their rage state. We decided on adding the cooldown to the photon whip, as speeding up the enemies rage state would not have targetted the core of the issue, which was the abuse of the photon whip leading to a lack of strategy in the shooting elements of the game. 
 			      		</p>
 			      		<p>
-			      		After thinking on the issue of strategy in the shooting gameplay for a bit, I also proposed a new system for how the weapons and enemies would work, that I hoped would encourage strategy on the players behalf and have them think about when they should or should not use certain weapons. This new system would have the weapons and enemies assigned to three different types (piercing, explosive and energy weapons/enemies), with each weapon type being more effective against certain enemy types as compared to others. With this implementation of a "weapon triangle" I hoped that players would have to think more carefully about which weapons to use based on the enemies in each conbat encounter, and they would have to plan on using the photon whip to steal wepaons accordingly due to its newly implemented cooldown. Allowing the player to carry two weapons at once and to be able to switch between them also helped to firther the depth and strategy of the gameplay.
+			      		After thinking on the issue of strategy in the shooting gameplay for a bit, I also proposed a new system for how the weapons and enemies would work, that I hoped would encourage strategy on the players behalf and have them think about when they should or should not use certain weapons. This new system would have the weapons and enemies assigned to three different types (piercing, explosive and energy weapons/enemies), with each weapon type being more effective against certain enemy types as compared to others. With this implementation of a "weapon triangle" I hoped that players would have to think more carefully about which weapons to use based on the enemies in each conbat encounter, and they would have to plan on using the photon whip to steal wepaons accordingly due to its newly implemented cooldown. Allowing the player to carry two weapons at once and to be able to switch between them also helped to further the depth and strategy of the gameplay.
 			      		</p>      
 
 			      </section>
@@ -154,12 +154,18 @@
 
 				<div class="grid-row portfolio-paragraph-spacer">
 
-				  <!-- Introduction to this project/overview -->
-			      <section id="project-intro">
+				  <!-- Project results/reflection write up -->
+			      <section id="project2-results">
 			      		<h4>The Result</h4>
 			      		<p>
-			      		Though the game is not well balanced or feature complete at the moment (it is more of a demo or vertical slice of a larger game), I believe the game contains a good base idea and design, and could turn into something great with more work. Through this project I learned a lot about how to manage time working on a project with various components that need to be combined, as well as how to structure the flow of a level and how to set up an efficient project pipeline for working on a game. This game took a lot of time to make, and was probably not the best idea for a two week project, seeing as a longer time period would have allowed me to create a more polished product. Nevertheless I feel that I learned a lot from this experience about game design and the design process, and have no regrets about perhaps being overly ambitious.
-			      		</p>	      
+			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts. If I were to go back and work on the game, I would probably put even more of a focus on the whip, and possibly get rid of or minimize the weapon triangle mechanic, and focus on fights with larger enemies and mobility, similar to Shadow of the Colossus. 
+			      		</p>
+			      		<p>
+			      		One of the primary lessons I learned from this project was how to deal with scope and planning, as well as how to work on balancing a game with AI and multiple weapons/attributes. In terms of scope, I learned that the implementation of a minimum viable product (MVP) is very important. The MVP should define the essential elements that need to be in the game to accomplish your goal/make the game what you want it to be. Using an MVP helps to limit feature creep to an extent, as the team should be focused on accomplishing the MVP before moving on to applying other game mechanics. The other iomportant aspect of scope that I learned about is that you should get a basic prototype up and running ASAP so that you can begin testing as early as possible, as your assumptions about how things will work will probably be wrong in a couple of areas.
+			      		</p>	
+			      		<p>
+			      		As for game design and game balancing, my major takeaway is that you will always become far too familiar with your game, and so when you feel it is at the perfect difficulty, it is probably still way too hard for the average player! Finally, I also learned that when considering game mechanic changes or implementing new mechanics, you should always keep the core gameplay loop in mind. You should ask questions such as: Does this mechanic add to the core gameplay loop? How severe is its effect on the core gameplay loop? Will this mechanic be familiar to players based on the core gameplay loop? etc. 
+			      		</p>      
 
 			      </section>
 
@@ -171,8 +177,8 @@
 
 				<div class="grid-row portfolio-paragraph-spacer">
 
-				  <!-- Introduction to this project/overview -->
-			      <section id="project-intro">
+				  <!-- Trailer for Havoc Gear -->
+			      <section id="project2-trailer">
 			      		<h4>Gameplay Trailer</h4>
 
 			      		<video class="project-image-container" controls>

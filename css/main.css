@@ -12,98 +12,8 @@ img {
 	max-width: 100%;
 }
 
-.img-home {
-	height: auto; 
-	max-width: 100%;
-}
-
-.img-featured {
-	height: auto; 
-	max-width: 100%;
-}
-
 /*
-Banner Image: https://i2.wp.com/sell.cratejoy.com/wp-content/uploads/2016/10/packaging.jpg?resize=815%2C489&ssl=1
-*/
-.banner-container {
-	height: 35rem;
-	width: 100%;
-	max-width: 100%;
-	background-image: url("../img/banner.jpg");
-	background-size: cover;
-}
-
-.banner-info-container {
-	position: relative;
-	background-color: rgba(30,30,30,.9);
-	height: auto;
-	width: 70%;
-	top: 50%;
-	transform: translateY(-50%);
-	margin: 0 auto;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	padding: 2% 2% 7% 2%;
-}
-
-.banner-spacer {
-	margin-bottom: 2rem;
-}
-
-.home-product-container {
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	text-align: center;
-	position: relative;
-}
-
-.home-product-image {
-	height: 20rem;
-}
-
-@media (min-width: 53em) {
-
-	.column-container-text {
-		margin: 0 5rem;
-	}
-}
-
-.button-top-spacer {
-	display: block;
-}
-
-.top-fix {
-	padding-top: 0.3rem;
-}
-
-.about-container {
-	position: relative;
-	margin-top: 2rem;
-	background-color: white;
-}
-
-/*
-About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab76eccbbd99feec6fc3f6bc.jpg
-*/
-.about-image {
-	height: 21.5rem;
-	width: 100%;
-	background-image: url("../img/about-banner.png");
-	background-size: 100% 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.about-container-text {
-	margin: 2rem;
-	color: #333333;
-}
-
-/*
-  STYLING FOR THE CRATE LIST AND CATEGORIES PAGES
-  Default styling for crate list and categories page elements 
+  STYLING FOR THE HOME PAGE
 */
 
 .category-container {
@@ -120,10 +30,6 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 
 .category-container:hover, .category-container:focus {
 	color: #6DCFF6;
-}
-
-.category-spacer {
-	margin: 0 1rem;
 }
 
 .category-image-1 {
@@ -275,7 +181,9 @@ About Image: https://s-media-cache-ak0.pinimg.com/originals/9b/e6/b2/9be6b21eab7
 	}
 }
 
-/*Body styling elements*/
+/*
+Default body styling elements
+*/
 .page-container {
 	min-height: 100%;
 	width: 100%;
@@ -408,7 +316,12 @@ StyleGuide Styling
 	background-color: #1e1e1e;
 } 
 
+@media (min-width: 53em) {
 
+	.column-container-text {
+		margin: 0 5rem;
+	}
+}
 
 
 /* 

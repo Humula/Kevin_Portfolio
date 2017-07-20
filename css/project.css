@@ -17,6 +17,24 @@
 	background-position: center;
 }
 
+.banner-container-project-3 {
+	height: 15rem;
+	width: 100%;
+	max-width: 100%;
+	background-image: url("../img/project2-1.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.banner-container-project-4 {
+	height: 15rem;
+	width: 100%;
+	max-width: 100%;
+	background-image: url("../img/project2-1.png");
+	background-size: cover;
+	background-position: center;
+}
+
 .project-image-container {
 	height: auto;
 	width: 100%;

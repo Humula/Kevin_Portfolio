@@ -55,7 +55,7 @@
 
 				  <!-- Introduction to this project/overview -->
 			      <section id="project3-brief">
-			      		<h2>Forlorn is a 2D top down shooter, where the player controls the Havoc Gear; a futuristic mech equipped with the patented “Photon Whip” that lets the player steal enemy weapons. </h2>      		
+			      		<h2>Forlorn is a VR narrative driven exploration game, where the player wakes up in a boat in a flooded abandoned city, and must find out where they are and what happened to them and the city. </h2>      		
 			      </section>
 
 			    </div>
@@ -77,14 +77,14 @@
 				      		<div class="grid-col-1of2 intro-text-spacer-right">
 					      		<h4>Roles</h4>
 					      		<p>
-					      		Game Designer, Level Designer, Environment Pixel Artist, Producer
+					      		Game Designer, Level Designer, Environment Designer, Producer
 					      		</p> 
 					      	</div>     
 			      	</div>
 
 			      		<h4>Goal</h4>
 					      <p>
-					      The goal of this project was to simulate the design process of creating a video game over the course of 3 months. Our team had a general interest in creating a sci-fi esque game, and we also wanted to include some sort of robot or mechanized suit that the player controls. After deciding on that, we settled on using the Unity 2D engine, as we wanted to focus on a top-down experience. In the end we hoped to emulate games such as Hotline Miami.
+					      The goal of this project was to create an immersive experience that emulated a situation that most people would be unlikely to find themselves in. We wanted to evoke feelings of curiosity, foreboding, dread and also isolation, and draw people into our narrative and exploring the environment. We also wanted to make sure that we used the VR technology we had available to full effect, both in the virtual world and also through the physical installation.
 					      </p>
 			      </section>
 
@@ -101,10 +101,10 @@
 			      <section id="project3-brainstorming">
 			      		<h4>Process - Brainstorming</h4>
 			      		<p>
-			      		For this project my team and I started off by brainstorming the mechanics that a mech based, top down, 2D shooter might entail. We realized that we wanted to offer the player a variety of weaponry, but were not sure that we wanted to go with the generic method of having the player pick up the weaponry from the ground or out of containers. Thus, we decided to settle on an idea that would become the core of our gameplay loop; the photon whip. The photon whip would allow the player to steal weapons from all of the enemies the player would face, presenting the player with the opportunity to gain new weapons any time they entered combat.
+			      		We started off knowing that we wanted to create a VR experience that would not just be recreating something that the player could already do in the real world. After working through an affinity diagram we all agreed that doing something with a boat would be very interesting due to the possible control options presented by it, as well as the reduced risk of a disconnect from the experience due to the player not having to walk.
 			      		</p>
 			      		<p>
-			      		If an enemies weapon was stolen they would enter a rage state, and would try to self-destruct on the player, bringing a risk along with stealing weapons. The final basic mechanic we decided on at this point was to give the player both a shield and a health attribute. We decided on this because we felt it may be unfaor to the player to take damage while attempting to acquire their first weapon in a combat encounter, and because the enemy weapons were fairly accurate due to their use of hitscan. At this point we had defined our primary and secondary core gameplay loops, as well as our MVP (minimum viable product).
+			      		For the theme and setting, we wanted to focus on having the player feel totally immersed, so we decided to go for a feeling of isolation throughout the experience. The player never encounters any other living beings, and all story exposition is told through environmental design and voice recordings. We wanted to allow players the freedom to navigate the world however they wanted, while giving them guidance through the use of sound and light in the environment.
 			      		</p>
 
 			      </section>
@@ -121,7 +121,7 @@
 			      <section id="project3-implementation">
 			      		<h4>Process - Implementation</h4>
 			      		<p>
-			      		Once the mechanics had been generally decided upon, I began to work on the level design and a basic game design document. The GDD outlined the basic principles of how the photon whip should work, and some general ideas of the different weaponry the enemies would have (machine gun, grenade launcher, sniper, etc.) Since the game was a top down 2D shooter, I neeeded to consider placement of protective cover and line of sight carefully, as we wanted to avoid the situation where a player would get attacked by an offscreen enemy as much as possible. I began sketching out some concepts of levels, which would include factors such as enemy spawns, secrets, obstacles/cover, and areas where doors would stop player progress. After completing the sketches, I then began to work on developing the tilesets for each of the maps, as another one of my focuses was doing the environmental pixel art for each level I created. Once an initial level and the basic game mechanics were implemented, we began to test the game, and worked to figure out what worked and what didn't.
+			      		I started off by imagining the general flow of how we wanted the player to progress through our narrative. We defined which were the core narrative pieces, and made sure they were not missbale by the player by putting them on the critical path, while the optional dialogue was added into side areas. These side areas had audio and visual cues to draw the player in, such as flashing car lights and  a car alarm. The level was built out in such a way that the player could head straight forward to get to the end, but they would likely be distracted by the stimuli all around them. In addition, the city was covered in a layer of fog to limit the player's vision while adding to the feelings of dread, foreboding and isolation that we wanted to evoke.
 			      		</p>	      
 
 			      </section>
@@ -138,10 +138,9 @@
 			      <section id="project3-iteration">
 			      		<h4>Process - Tweaking and Refining</h4>
 			      		<p>
-			      		After our initial round of testing, we realized that there were some concerning problems that we had no anticipated. The first of these was that players would use the photon whip constantly to steal weapons from the enemies so that they were never able to even fire them. The issue here was that the player would have no need to worry about ammo, and the enemy rage state was not threatening enough to the player, as the enemies were not fast enough to reach the player before they would be destroyed. I suggested two possible solutions to this: one was to add a cooldown to the photon whip, while the other was to increase the speed of the enemy when they enetered their rage state. We decided on adding the cooldown to the photon whip, as speeding up the enemies rage state would not have targetted the core of the issue, which was the abuse of the photon whip leading to a lack of strategy in the shooting elements of the game. 
-			      		</p>
+			      		It became apparent almost immediately after beginning testing that players were having trouble navigating the open world. Many would become lost after heading off on a side path, and they seemed to have difficulty navigating in general due to the proximity of the buildings. To solve this, I decided to add light sources to street lamps that would now line the main explorable areas, hopefully creating a boundary of sorts for the player to follow and stay within. In addition to this, I also reduced the amount of space between buildings in non-critical areas, so as to discourage players from exploring the cramped spaces, and ultimately finding the edges of our environment.
 			      		<p>
-			      		After thinking on the issue of strategy in the shooting gameplay for a bit, I also proposed a new system for how the weapons and enemies would work, that I hoped would encourage strategy on the players behalf and have them think about when they should or should not use certain weapons. This new system would have the weapons and enemies assigned to three different types (piercing, explosive and energy weapons/enemies), with each weapon type being more effective against certain enemy types as compared to others. With this implementation of a "weapon triangle" I hoped that players would have to think more carefully about which weapons to use based on the enemies in each conbat encounter, and they would have to plan on using the photon whip to steal wepaons accordingly due to its newly implemented cooldown. Allowing the player to carry two weapons at once and to be able to switch between them also helped to further the depth and strategy of the gameplay.
+			      		Another issue we faced at this point was one of controls. We only had access to an Oculus Rift Dev Kit 2, and so we were not able to make use of any of the standard touch controllers on the market. Due to this, initially I had wanted to use a Wiimote to control the boat, as I had felt like it could be a good mimic of a boat rudder, and would hopefully make the player feel more immersed in the experience. Unfortunately we had some difficulties implementing the Wiimote with Unity on our rushed timeline, and so had to resort to using a standard Xbox controller.
 			      		</p>      
 
 			      </section>
@@ -154,23 +153,29 @@
 
 				<div class="grid-row portfolio-paragraph-spacer">
 
-				  <!-- Project results/reflection write up -->
-			      <section id="project3-results">
-			      		<h4>The Result</h4>
+				  <!-- Project final touches -->
+			      <section id="project3-final-touches">
+			      		<h4>Process - Final Touches</h4>
 			      		<p>
-			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts. If I were to go back and work on the game, I would probably put even more of a focus on the whip, and possibly get rid of or minimize the weapon triangle mechanic, and focus on fights with larger enemies and mobility, similar to Shadow of the Colossus. 
-			      		</p>
-			      		<p>
-			      		One of the primary lessons I learned from this project was how to deal with scope and planning, as well as how to work on balancing a game with AI and multiple weapons/attributes. In terms of scope, I learned that the implementation of a minimum viable product (MVP) is very important. The MVP should define the essential elements that need to be in the game to accomplish your goal/make the game what you want it to be. Using an MVP helps to limit feature creep to an extent, as the team should be focused on accomplishing the MVP before moving on to applying other game mechanics. The other iomportant aspect of scope that I learned about is that you should get a basic prototype up and running ASAP so that you can begin testing as early as possible, as your assumptions about how things will work will probably be wrong in a couple of areas.
-			      		</p>	
-			      		<p>
-			      		As for game design and game balancing, my major takeaway is that you will always become far too familiar with your game, and so when you feel it is at the perfect difficulty, it is probably still way too hard for the average player! Finally, I also learned that when considering game mechanic changes or implementing new mechanics, you should always keep the core gameplay loop in mind. You should ask questions such as: Does this mechanic add to the core gameplay loop? How severe is its effect on the core gameplay loop? Will this mechanic be familiar to players based on the core gameplay loop? etc. 
-			      		</p>      
+			      		The final VR experience lasted for around 5 - 10 minutes, and featured 4 optional areas as well as two primary locations: the city and the facility. Since we were designing this game to be exhibited to players of all ages and skill levels, we wanted to make sure that the process of interaction was as smooth as possible. We made use of a reticle along with the head tracking of VR to allow users to interact with objects in the environment. Users would look at an object, and a circle around the reticle would fill up to show that something was about to be triggered. To go along with this, we also added a consistent highlight to all of the objecst that were interactable, so that users would not mix up interactable objects with environmental objects. 
+			      		</p>    
 
 			      </section>
 
 			    </div>
 			    <img class="project-image-container" src="img/project3-6.png" alt="Project 3 Image">
+			</div>
+
+			<div class="wrapper">
+
+			<!-- Project reflection write up -->
+			      <section id="project3-takeaway">
+			      		<h4>The Takeaway</h4>
+			      		<p>
+			      		My main takeaway from this project was how to work with VR, both for better and for worse. While I expected that placing the player in a boat would help to relieve some of the issues of motion sickness by not having their movement desynced from their actual actions, I failed to consider the effects that the water would have on the player. We tried many iterations of how the boat interacted with the water, such as having it bob with the water, not bob at all, keeping the camera completely steady, etc. but none really seemed to present a perfect solution. Motion sickness is one of the unfortuante realities of VR, and something I now know to pay attention to closely from the beginning of a VR project. In addition, I think it is important to consider what control scheme the player will be using for your VR experience, and to try to mesh it a smuch as possible to what their avatar will actually be doing in the game.
+			      		</p>	     
+
+			      </section>
 			</div>
 
 			<div class="wrapper">

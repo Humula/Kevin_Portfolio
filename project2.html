@@ -121,7 +121,7 @@
 			      <section id="project2-implementation">
 			      		<h4>Process - Implementation</h4>
 			      		<p>
-			      		Once the mechanics had been generally decided upon, I began to work on the level design and a basic game design document. The GDD outlined the basic principles of how the photon whip should work, and some general ideas of the different weaponry the enemies would have (machine gun, grenade launcher, sniper, etc.) Since the game was a top down 2D shooter, I neeeded to consider placement of protective cover and line of sight carefully, as we wanted to avoid the situation where a player would get attacked by an offscreen enemy as much as possible. I began sketching out some concepts of levels, which would include factors such as enemy spawns, secrets, obstacles/cover, and areas where doors would stop player progress. After completing the sketches, I then began to work on developing the tilesets for each of the maps, as another one of my focuses was doing the environmental pixel art for each level I created. Once an initial level and the basic game mechanics were implemented, we began to test the game, and worked to figure out what worked and what didn't.
+			      		Once the mechanics had been generally decided upon, I began to work on the level design and a basic game design document. The GDD outlined the basic principles of how the photon whip should work, and some general ideas of the different weaponry the enemies would have (machine gun, grenade launcher, sniper, etc.) Since the game was a top down 2D shooter, I needed to consider placement of protective cover and line of sight carefully, as we wanted to avoid the situation where a player would get attacked by an offscreen enemy as much as possible. I began sketching out some concepts of levels, while at the same time beginning to work on developing the tilesets for each of the maps, as another one of my focuses was doing the environmental pixel art for each level I created.
 			      		</p>	      
 
 			      </section>
@@ -138,10 +138,10 @@
 			      <section id="project2-iteration">
 			      		<h4>Process - Tweaking and Refining</h4>
 			      		<p>
-			      		After our initial round of testing, we realized that there were some concerning problems that we had no anticipated. The first of these was that players would use the photon whip constantly to steal weapons from the enemies so that they were never able to even fire them. The issue here was that the player would have no need to worry about ammo, and the enemy rage state was not threatening enough to the player, as the enemies were not fast enough to reach the player before they would be destroyed. I suggested two possible solutions to this: one was to add a cooldown to the photon whip, while the other was to increase the speed of the enemy when they enetered their rage state. We decided on adding the cooldown to the photon whip, as speeding up the enemies rage state would not have targetted the core of the issue, which was the abuse of the photon whip leading to a lack of strategy in the shooting elements of the game. 
+			      		After our initial round of testing, we realized that there were some concerning problems that we had no anticipated. The first of these was that players would use the photon whip constantly to steal weapons from the enemies so that they were never able to even fire them. I suggested two possible solutions to this: one was to add a cooldown to the photon whip, while the other was to increase the speed of the enemy when they enetered their rage state (after having their weapon stolen). We decided on adding the cooldown to the photon whip, as speeding up the enemies rage state would not have targetted the core of the issue, which was the abuse of the photon whip leading to a lack of strategy in the shooting elements of the game. 
 			      		</p>
 			      		<p>
-			      		After thinking on the issue of strategy in the shooting gameplay for a bit, I also proposed a new system for how the weapons and enemies would work, that I hoped would encourage strategy on the players behalf and have them think about when they should or should not use certain weapons. This new system would have the weapons and enemies assigned to three different types (piercing, explosive and energy weapons/enemies), with each weapon type being more effective against certain enemy types as compared to others. With this implementation of a "weapon triangle" I hoped that players would have to think more carefully about which weapons to use based on the enemies in each conbat encounter, and they would have to plan on using the photon whip to steal wepaons accordingly due to its newly implemented cooldown. Allowing the player to carry two weapons at once and to be able to switch between them also helped to further the depth and strategy of the gameplay.
+			      		I also proposed a new system for how the weapons and enemies would work, that I hoped would encourage strategy on the players behalf and have them think about when they should or should not use certain weapons. This new system would have the weapons and enemies assigned to three different types (piercing, explosive and energy weapons/enemies), with each weapon type being more effective against certain enemy types as compared to others. In addition, the player would be able to carry two weapons at a time, with all of this hopefully adding to the depth and strategy of the gameplay, and causing the player to think about when to use the photon whip. 
 			      		</p>      
 
 			      </section>
@@ -154,23 +154,32 @@
 
 				<div class="grid-row portfolio-paragraph-spacer">
 
-				  <!-- Project results/reflection write up -->
-			      <section id="project2-results">
-			      		<h4>The Result</h4>
+				  <!-- Project final touches -->
+			      <section id="project2-final-touches">
+			      		<h4>Process - Final Touches</h4>
 			      		<p>
-			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts. If I were to go back and work on the game, I would probably put even more of a focus on the whip, and possibly get rid of or minimize the weapon triangle mechanic, and focus on fights with larger enemies and mobility, similar to Shadow of the Colossus. 
-			      		</p>
+			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts.
+			      		</p>    
+
+			      </section>
+
+			    </div>
+			    <img class="project-image-container" src="img/project2-6.png" alt="Project 2 Image">
+			</div>
+
+			<div class="wrapper">
+
+			<!-- Project reflection write up -->
+			      <section id="project2-takeaway">
+			      		<h4>The Takeaway</h4>
 			      		<p>
-			      		One of the primary lessons I learned from this project was how to deal with scope and planning, as well as how to work on balancing a game with AI and multiple weapons/attributes. In terms of scope, I learned that the implementation of a minimum viable product (MVP) is very important. The MVP should define the essential elements that need to be in the game to accomplish your goal/make the game what you want it to be. Using an MVP helps to limit feature creep to an extent, as the team should be focused on accomplishing the MVP before moving on to applying other game mechanics. The other iomportant aspect of scope that I learned about is that you should get a basic prototype up and running ASAP so that you can begin testing as early as possible, as your assumptions about how things will work will probably be wrong in a couple of areas.
+			      		One of the primary lessons I learned from this project was how to deal with scope and planning, as well as how to work on balancing a game with AI and multiple weapons/attributes. In terms of scope, I learned that the implementation of a minimum viable product (MVP) is very important. The MVP should define the essential elements that need to be in the game to accomplish your goal/make the game what you want it to be. The other important aspect of scope that I learned about is that you should get a basic prototype up and running ASAP so that you can begin testing as early as possible, as your assumptions about how things will work will probably be wrong in a couple of areas.
 			      		</p>	
 			      		<p>
 			      		As for game design and game balancing, my major takeaway is that you will always become far too familiar with your game, and so when you feel it is at the perfect difficulty, it is probably still way too hard for the average player! Finally, I also learned that when considering game mechanic changes or implementing new mechanics, you should always keep the core gameplay loop in mind. You should ask questions such as: Does this mechanic add to the core gameplay loop? How severe is its effect on the core gameplay loop? Will this mechanic be familiar to players based on the core gameplay loop? etc. 
 			      		</p>      
 
 			      </section>
-
-			    </div>
-			    <img class="project-image-container" src="img/project2-6.png" alt="Project 2 Image">
 			</div>
 
 			<div class="wrapper">

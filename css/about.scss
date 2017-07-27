@@ -1,0 +1,22 @@
+
+.banner-container-about {
+	height: 15rem;
+	width: 100%;
+	max-width: 100%;
+	background-image: url("../img/about.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.project-image-container {
+	height: 30rem;
+	width: 100%;
+	max-width: 100%;
+}
+
+@media (min-width: 50em) {
+
+	.banner-container-about {
+		height: 40rem;
+	}
+}

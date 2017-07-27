@@ -1,0 +1,487 @@
+/*
+  STYLING FOR THE HOME PAGE
+  Default styling for home page elements 
+*/
+
+a {
+	text-decoration: none;
+}
+
+img {
+	height: auto; 
+	max-width: 100%;
+}
+
+$branding-blue: #6DCFF6;
+$bg-color: #1e1e1e;
+
+/*
+  STYLING FOR THE HOME PAGE
+*/
+
+.home-page-intro {
+	margin: 0;
+	padding-top: 1rem;
+}
+
+@media (min-width: 50em) {
+
+	.home-page-intro {
+		margin: 0 7%;
+	}
+}
+
+.category-container {
+	margin-top: 2rem;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	text-decoration: none;
+	-webkit-transition: color 0.5s ease-out;
+  	transition: color 0.5s ease-out;
+	color: white;
+}
+
+.category-container:hover, .category-container:focus {
+	color: $branding-blue;
+}
+
+.category-image-1 {
+	background-image: url("../img/project1-1.png");
+	height: 200px;
+	width: 300px;
+	margin: 0 auto;
+	background-size: cover;
+	background-position: center;
+	-webkit-transition: background-image 0.5s ease-out;
+  	transition: background-image 0.5s ease-out;
+}
+
+.category-image-1:hover {
+	background-image: url("../img/project1-1fade.png");
+}
+
+.category-image-2 {
+	background-image: url("../img/project2-1fade.png");
+	height: 200px;
+	width: 300px;
+	margin: 0 auto;
+	background-size: cover;
+	background-position: center;
+	-webkit-transition: background-image 0.5s ease-out;
+  	transition: background-image 0.5s ease-out;
+}
+
+.category-image-2:hover {
+	background-image: url("../img/project2-1.png");
+}
+
+.category-image-3 {
+	background-image: url("../img/project3-1fade.png");
+	height: 200px;
+	width: 300px;
+	margin: 0 auto;
+	background-size: cover;
+	background-position: center;
+	-webkit-transition: background-image 0.5s ease-out;
+  	transition: background-image 0.5s ease-out;
+}
+
+.category-image-3:hover {
+	background-image: url("../img/project3-1.png");
+}
+
+.category-image-4 {
+	background-image: url("../img/project4-1fade.png");
+	height: 200px;
+	width: 300px;
+	margin: 0 auto;
+	background-size: cover;
+	background-position: center;
+	-webkit-transition: background-image 0.5s ease-out;
+  	transition: background-image 0.5s ease-out;
+}
+
+.category-image-4:hover {
+	background-image: url("../img/project4-1.png");
+}
+
+@media (min-width: 50em) {
+
+	.category-image-1, .category-image-2, .category-image-3, .category-image-4 {
+		width: 90%;
+		height: 300px;
+	}
+}
+
+/*
+  Header styling elements
+  Reference for fixed to top scrolling header: http://cssreset.com/creating-fixed-headers-with-css/
+*/
+.header-container {
+	position: absolute;
+	top: 0;
+	height: auto; /*Height of the header*/
+	width: 100%;
+	z-index: 1;
+	background-color: $bg-color;
+}
+
+.main-nav-container {
+	width:100%;
+	height:100%;
+	text-align: center;
+}
+
+.header-link-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.header-icon {
+	vertical-align: middle;
+	height: 4.2rem;
+	margin-top: 0.25rem;
+}
+
+.main-nav-header {
+	display: inline-block;
+	margin-left: 1rem;
+	margin-top: 0.4rem;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	
+}
+
+.main-nav-header-dropdown {
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+	padding-top: 4px;
+	background-color: transparent;
+}
+
+.main-nav-header-dropdown a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    background-color: #111111;
+    border: 1px solid #f1f1f1;
+}
+
+.main-nav-header-dropdown a:hover, .main-nav-header-dropdown a:focus {
+	-webkit-transition: color 0.5s ease-out;
+  	transition: color 0.5s ease-out;
+	color: $branding-blue;
+}
+
+.main-nav-header:hover .main-nav-header-dropdown {
+    display: block;
+}
+
+.header-right {
+	float: right;
+	line-height: 4rem;
+	vertical-align: middle;
+	margin-right: 1rem;
+}
+
+.main-nav-header-left {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	float: left;
+	margin-left: 0.5rem;
+}
+
+
+.main-nav-header:hover, .main-nav-header:focus {
+	color: $branding-blue;
+	-webkit-transition: color 0.5s ease-out;
+  	transition: color 0.5s ease-out;
+}
+
+.main-nav-header-left:hover, .main-nav-header-left:focus {
+	color: $branding-blue;
+	-webkit-transition: color 0.5s ease-out;
+  	transition: color 0.5s ease-out;
+}
+
+
+@media (min-width: 50em) {
+
+	.main-nav-header {
+		margin-left: 5rem;
+	}
+
+	.header-right {
+		margin-right: 2rem;
+	}
+
+	.main-nav-header-left {
+		margin-left: 2rem;
+	}
+
+	.main-nav-header-dropdown {
+		padding-top: 5px;
+		background-color: transparent;
+	}
+}
+
+/*
+Default body styling elements
+*/
+.page-container {
+	min-height: 100%;
+	width: 100%;
+  	position: absolute;
+  	color: white;
+  	background-color: $bg-color;
+}
+
+.body-container {
+	height: 100%;
+	margin-top: 4.7rem; /*Height of the header*/
+	padding-bottom: 10rem; /*Height of the footer*/
+	background-color: $bg-color;
+}
+
+.wrapper {
+	padding: 0 8%;
+}
+
+.wide-wrapper {
+	padding: 0 10%;
+}
+
+.portfolio-paragraph-spacer {
+	margin: 3rem 0;
+}
+
+
+/*
+  Footer styling elements
+  Reference for locked to bottom footer: http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page
+  Footer social media badges: https://www.iconfinder.com/iconsets/free-social-media-set	
+*/
+.footer-container {
+	position: absolute;
+	bottom: 0;
+	height: auto; /*Height of the footer*/
+	width: 100%;
+	background-color: #111111;
+}
+
+.main-footer-nav-container {
+	width:100%;
+	text-align: center;
+}
+
+.footer-content-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.footer-text {
+	position: relative;
+	color: white;
+	text-decoration: none;
+	vertical-align: middle;
+	display: inline;
+}
+
+.footer-icon {
+	height: 2rem;
+	width: 2rem;
+	margin: 0;
+	vertical-align: middle;
+}
+
+@media (min-width: 50em) {
+
+	.footer-icon {
+		margin: 0 0.5rem;;
+	}
+}
+
+/*
+StyleGuide Styling
+*/
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.main-nav-header-example {
+	color: white;
+	padding: 1rem;
+	text-decoration: none;
+	background-color: $bg-color;
+}
+
+.main-nav-header-example:hover, .main-nav-header-example:focus {
+	color: $branding-blue;
+	-webkit-transition: color 0.5s ease-out;
+  	transition: color 0.5s ease-out;
+}
+
+.basic-button {
+	color: white;
+	background-color: $branding-blue;
+	padding: 1rem 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+  	border-radius: 7px;
+}
+
+.basic-button:hover, .basic-button:focus {
+	background-color: #af5c20;
+} 
+
+.basic-button2 {
+	color: white;
+	background-color: #464646;
+	padding: 1rem 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s ease-out;
+  	transition: background-color 0.5s ease-out;
+  	border-radius: 7px;
+}
+
+.basic-button2:hover, .basic-button2:focus {
+	background-color: $bg-color;
+} 
+
+@media (min-width: 50em) {
+
+	.column-container-text {
+		margin: 0 5rem;
+	}
+}
+
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+body {
+	font-family: "Arial", arial, sans-serif;
+}
+
+h1 {
+	font-family: "Impact", arial, sans-serif;
+	font-weight: normal;
+	font-size: 1rem;
+	margin: 0;
+}
+
+@media (min-width: 50em) {
+
+	h1 {
+		font-size: 2rem;
+	}
+}
+
+h2 {
+	font-family: "Arial", arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.75rem;
+}
+
+h3 {
+	font-family: "Arial", arial, sans-serif;
+	font-weight: normal;
+	font-size: 1.25rem;
+}
+
+h4 {
+	font-family: "Arial", arial, sans-serif;
+	font-weight: normal;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: "Arial", arial, sans-serif;
+	font-weight: normal;
+	font-size: 1.15rem;
+}
+
+.explanation-text {
+	color: grey;
+	display: inline;
+}
+
+.text-content {
+	color: black;
+	display: inline;
+}
+
+.wireframe {
+	margin: 1rem;
+}
+
+.text-spacer {
+	vertical-align: top;
+	display: inline-block;
+	width: 18%;
+}
+
+.text-spacer-small {
+	vertical-align: top;
+	display: inline-block;
+	width: 32%;
+}
+
+.text-spacer-medium {
+	vertical-align: top;
+	display: inline-block;
+	width: 48%;
+}
+
+.text-spacer-code {
+	vertical-align: top;
+	display: inline-block;
+	width: 60%;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+.text-spacer-large {
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+.text-spacer-image {
+	vertical-align: top;
+	display: inline;
+	width: 100%;
+	position: relative;
+}
+
+.bottom-align {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 1.5rem;
+}

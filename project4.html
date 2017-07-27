@@ -68,18 +68,10 @@
 				  <!-- Team members and my role for project/project goal -->
 			      <section id="project4-intro">
 			      	<div class="grid-row">
-			      			<div class="grid-col-1of2 intro-text-spacer-left">
-					      		<h4>Team</h4>
-					      		<p>
-					      		Kevin Lamprecht, Darren MacPhail, Andy Bae
-					      		</p>
-				      		</div>
-				      		<div class="grid-col-1of2 intro-text-spacer-right">
 					      		<h4>Roles</h4>
 					      		<p>
-					      		Game Designer, Level Designer, Environment Pixel Artist, Producer
-					      		</p> 
-					      	</div>     
+					      		Game Designer, Level Designer, Environment and Character Artist, UX Designer, Sound Designer, Producer
+					      		</p>
 			      	</div>
 
 			      		<h4>Goal</h4>
@@ -98,7 +90,8 @@
 				  <img class="project-image-container" src="img/project4-2.jpg" alt="Project 4 Image">
 
 				  <!-- Project brainstorming write up -->
-			      <section id="project4-brainstorming">
+			      <section id="project4-brainstorming-bbw">
+			      		<h2>Big Barn World Feature Development</h2>
 			      		<h4>Process - Brainstorming</h4>
 			      		<p>
 			      		For this project my team and I started off by brainstorming the mechanics that a mech based, top down, 2D shooter might entail. We realized that we wanted to offer the player a variety of weaponry, but were not sure that we wanted to go with the generic method of having the player pick up the weaponry from the ground or out of containers. Thus, we decided to settle on an idea that would become the core of our gameplay loop; the photon whip. The photon whip would allow the player to steal weapons from all of the enemies the player would face, presenting the player with the opportunity to gain new weapons any time they entered combat.
@@ -118,7 +111,7 @@
 				<div class="grid-row portfolio-paragraph-spacer">
 
 				  <!-- Project implementation write up -->
-			      <section id="project4-implementation">
+			      <section id="project4-implementation-bbw">
 			      		<h4>Process - Implementation</h4>
 			      		<p>
 			      		Once the mechanics had been generally decided upon, I began to work on the level design and a basic game design document. The GDD outlined the basic principles of how the photon whip should work, and some general ideas of the different weaponry the enemies would have (machine gun, grenade launcher, sniper, etc.) Since the game was a top down 2D shooter, I neeeded to consider placement of protective cover and line of sight carefully, as we wanted to avoid the situation where a player would get attacked by an offscreen enemy as much as possible. I began sketching out some concepts of levels, which would include factors such as enemy spawns, secrets, obstacles/cover, and areas where doors would stop player progress. After completing the sketches, I then began to work on developing the tilesets for each of the maps, as another one of my focuses was doing the environmental pixel art for each level I created. Once an initial level and the basic game mechanics were implemented, we began to test the game, and worked to figure out what worked and what didn't.
@@ -135,8 +128,9 @@
 				<div class="grid-row portfolio-paragraph-spacer">
 
 				  <!-- Project refining/iteration write up -->
-			      <section id="project4-iteration">
-			      		<h4>Process - Tweaking and Refining</h4>
+			      <section id="project4-brainstorming">
+			      		<h2>Original Game Design Work</h2>
+			      		<h4>Process - Brainstorming</h4>
 			      		<p>
 			      		After our initial round of testing, we realized that there were some concerning problems that we had no anticipated. The first of these was that players would use the photon whip constantly to steal weapons from the enemies so that they were never able to even fire them. The issue here was that the player would have no need to worry about ammo, and the enemy rage state was not threatening enough to the player, as the enemies were not fast enough to reach the player before they would be destroyed. I suggested two possible solutions to this: one was to add a cooldown to the photon whip, while the other was to increase the speed of the enemy when they enetered their rage state. We decided on adding the cooldown to the photon whip, as speeding up the enemies rage state would not have targetted the core of the issue, which was the abuse of the photon whip leading to a lack of strategy in the shooting elements of the game. 
 			      		</p>
@@ -155,24 +149,63 @@
 				<div class="grid-row portfolio-paragraph-spacer">
 
 				  <!-- Project results/reflection write up -->
-			      <section id="project4-results">
-			      		<h4>The Result</h4>
+			      <section id="project4-implementation">
+			      		<h4>Process - Implementation</h4>
 			      		<p>
 			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts. If I were to go back and work on the game, I would probably put even more of a focus on the whip, and possibly get rid of or minimize the weapon triangle mechanic, and focus on fights with larger enemies and mobility, similar to Shadow of the Colossus. 
-			      		</p>
-			      		<p>
-			      		One of the primary lessons I learned from this project was how to deal with scope and planning, as well as how to work on balancing a game with AI and multiple weapons/attributes. In terms of scope, I learned that the implementation of a minimum viable product (MVP) is very important. The MVP should define the essential elements that need to be in the game to accomplish your goal/make the game what you want it to be. Using an MVP helps to limit feature creep to an extent, as the team should be focused on accomplishing the MVP before moving on to applying other game mechanics. The other iomportant aspect of scope that I learned about is that you should get a basic prototype up and running ASAP so that you can begin testing as early as possible, as your assumptions about how things will work will probably be wrong in a couple of areas.
-			      		</p>	
-			      		<p>
-			      		As for game design and game balancing, my major takeaway is that you will always become far too familiar with your game, and so when you feel it is at the perfect difficulty, it is probably still way too hard for the average player! Finally, I also learned that when considering game mechanic changes or implementing new mechanics, you should always keep the core gameplay loop in mind. You should ask questions such as: Does this mechanic add to the core gameplay loop? How severe is its effect on the core gameplay loop? Will this mechanic be familiar to players based on the core gameplay loop? etc. 
-			      		</p>      
+			      		</p>    
 
 			      </section>
 
 			    </div>
 			    <img class="project-image-container" src="img/project4-6.png" alt="Project 4 Image">
+			</div>
+
+			<div class="wrapper">
+
+				<div class="grid-row portfolio-paragraph-spacer">
+
+				  <!-- Project results/reflection write up -->
+			      <section id="project4-iteration">
+			      		<h4>Process - Tweaking and Refining</h4>
+			      		<p>
+			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts. If I were to go back and work on the game, I would probably put even more of a focus on the whip, and possibly get rid of or minimize the weapon triangle mechanic, and focus on fights with larger enemies and mobility, similar to Shadow of the Colossus. 
+			      		</p>    
+			      </section>
+
+			    </div>
 			    <img class="project-image-container" src="img/project4-7.png" alt="Project 4 Image">
+			</div>
+
+			<div class="wrapper">
+
+				<div class="grid-row portfolio-paragraph-spacer">
+
+				  <!-- Project results/reflection write up -->
+			      <section id="project4-result">
+			      		<h4>The Result</h4>
+			      		<p>
+			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts. If I were to go back and work on the game, I would probably put even more of a focus on the whip, and possibly get rid of or minimize the weapon triangle mechanic, and focus on fights with larger enemies and mobility, similar to Shadow of the Colossus. 
+			      		</p>    
+			      </section>
+
+			    </div>
 			    <img class="project-image-container" src="img/project4-8.png" alt="Project 4 Image">
+			</div>
+
+			<div class="wrapper">
+
+				<div class="grid-row portfolio-paragraph-spacer">
+
+				  <!-- Project results/reflection write up -->
+			      <section id="project4-takeaway">
+			      		<h4>The Takeaway</h4>
+			      		<p>
+			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts. If I were to go back and work on the game, I would probably put even more of a focus on the whip, and possibly get rid of or minimize the weapon triangle mechanic, and focus on fights with larger enemies and mobility, similar to Shadow of the Colossus. 
+			      		</p>    
+			      </section>
+
+			    </div>
 			</div>
 
 			<!-- Locked Bottom Footer -->
@@ -193,9 +226,6 @@
 
 			        	<a href="https://www.youtube.com">
 			        	<img class="footer-icon" src="img/youtube.png" alt="Contact Icons"></a>
-
-			        	<a href="https://www.snapchat.com">
-			        	<img class="footer-icon" src="img/snapchat.png" alt="Contact Icons"></a>
 			        </div>
 		        </div>
 	        	</div>

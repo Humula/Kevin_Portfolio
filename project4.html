@@ -55,7 +55,7 @@
 
 				  <!-- Introduction to this project/overview -->
 			      <section id="project4-brief">
-			      		<h2>Forlorn is a 2D top down shooter, where the player controls the Havoc Gear; a futuristic mech equipped with the patented “Photon Whip” that lets the player steal enemy weapons. </h2>      		
+			      		<h2>Starting in January of 2016, I worked for a year at airG in Vancouver, designing and integrating new features for their flagship game Big Barn World, as well as leading the design and development on new, original games. </h2>      		
 			      </section>
 
 			    </div>
@@ -70,13 +70,13 @@
 			      	<div class="grid-row">
 					      		<h4>Roles</h4>
 					      		<p>
-					      		Game Designer, Level Designer, Environment and Character Artist, UX Designer, Sound Designer, Producer
+					      		Game Designer, Level Designer, Environment and Character Artist, UX/UI Designer, Sound Designer, Project Lead
 					      		</p>
 			      	</div>
 
 			      		<h4>Goal</h4>
 					      <p>
-					      The goal of this project was to simulate the design process of creating a video game over the course of 3 months. Our team had a general interest in creating a sci-fi esque game, and we also wanted to include some sort of robot or mechanized suit that the player controls. After deciding on that, we settled on using the Unity 2D engine, as we wanted to focus on a top-down experience. In the end we hoped to emulate games such as Hotline Miami.
+					      For the first half of my year at airG I was primarily working on feature design and implementation for their flagship game Big Barn World. This involved sketching out concepts, getting them approved, creating mock-ups, and then discussing the mock-ups to developers so that they could be implemented correctly. For the second half of my year at airG I also took on the responsibility of leading a two man team on the design and development of experimental, original games for the company. I took on all roles for the work on these games (game design, art, sound, etc.) except for the programming which was done by my co-worker. I will first discuss my work on Big Barn World, and then my work on leading a two man game design team.
 					      </p>
 			      </section>
 
@@ -94,10 +94,10 @@
 			      		<h2>Big Barn World Feature Development</h2>
 			      		<h4>Process - Brainstorming</h4>
 			      		<p>
-			      		For this project my team and I started off by brainstorming the mechanics that a mech based, top down, 2D shooter might entail. We realized that we wanted to offer the player a variety of weaponry, but were not sure that we wanted to go with the generic method of having the player pick up the weaponry from the ground or out of containers. Thus, we decided to settle on an idea that would become the core of our gameplay loop; the photon whip. The photon whip would allow the player to steal weapons from all of the enemies the player would face, presenting the player with the opportunity to gain new weapons any time they entered combat.
+			      		For Big Barn World feature development, the example I will use here is the creation of a new leaderboard system. The primary issue with the current implementation was the use of space, so I had to make sure that my design aimed to display the most information at any one time, without feeling too cluttered. The primary goal was to display at least the top three users for each category on the leaderboard, before the user would need to proceed to a separate page.
 			      		</p>
 			      		<p>
-			      		If an enemies weapon was stolen they would enter a rage state, and would try to self-destruct on the player, bringing a risk along with stealing weapons. The final basic mechanic we decided on at this point was to give the player both a shield and a health attribute. We decided on this because we felt it may be unfaor to the player to take damage while attempting to acquire their first weapon in a combat encounter, and because the enemy weapons were fairly accurate due to their use of hitscan. At this point we had defined our primary and secondary core gameplay loops, as well as our MVP (minimum viable product).
+			      		Since this was a mobile application, I wanted to make use of paradigms that would be familiar to mobile users. After evaluating my initial sketches, I decided to go with the approach of using expanding and collapsing drawers for each category, opening up the option of user customization, as the application would remember which categories had been left open and closed so that a user’s favourite categories would always be open for them. To get to the full leaderboard users would just have to tap on a “Get More” button, bringing them to a similar leaderboard page as the previous design did, but now with customization and previews.
 			      		</p>
 
 			      </section>
@@ -111,10 +111,10 @@
 				<div class="grid-row portfolio-paragraph-spacer">
 
 				  <!-- Project implementation write up -->
-			      <section id="project4-implementation-bbw">
-			      		<h4>Process - Implementation</h4>
+			      <section id="project4-iteration-bbw">
+			      		<h4>Process - Tweaking and Refining</h4>
 			      		<p>
-			      		Once the mechanics had been generally decided upon, I began to work on the level design and a basic game design document. The GDD outlined the basic principles of how the photon whip should work, and some general ideas of the different weaponry the enemies would have (machine gun, grenade launcher, sniper, etc.) Since the game was a top down 2D shooter, I neeeded to consider placement of protective cover and line of sight carefully, as we wanted to avoid the situation where a player would get attacked by an offscreen enemy as much as possible. I began sketching out some concepts of levels, which would include factors such as enemy spawns, secrets, obstacles/cover, and areas where doors would stop player progress. After completing the sketches, I then began to work on developing the tilesets for each of the maps, as another one of my focuses was doing the environmental pixel art for each level I created. Once an initial level and the basic game mechanics were implemented, we began to test the game, and worked to figure out what worked and what didn't.
+			      		After nailing down the initial design, I decided to add to the customization even further, by implementing a simple drag-and-drop system so that the leaderboard categories could be reorganized into any order that the user wanted, with the positions being remembered by the application. This would allow the user to group all of their favourite categories at the top, and also allow them to leave certain categories expanded or collapsed depending on which ones they wanted open for quick perusal. My design was then passed off to the development team, where it was implemented into Big Barn World and is now part of the live product.
 			      		</p>	      
 
 			      </section>
@@ -132,10 +132,10 @@
 			      		<h2>Original Game Design Work</h2>
 			      		<h4>Process - Brainstorming</h4>
 			      		<p>
-			      		After our initial round of testing, we realized that there were some concerning problems that we had no anticipated. The first of these was that players would use the photon whip constantly to steal weapons from the enemies so that they were never able to even fire them. The issue here was that the player would have no need to worry about ammo, and the enemy rage state was not threatening enough to the player, as the enemies were not fast enough to reach the player before they would be destroyed. I suggested two possible solutions to this: one was to add a cooldown to the photon whip, while the other was to increase the speed of the enemy when they enetered their rage state. We decided on adding the cooldown to the photon whip, as speeding up the enemies rage state would not have targetted the core of the issue, which was the abuse of the photon whip leading to a lack of strategy in the shooting elements of the game. 
+			      		My process for designing original games at airG would usually start out with identifying an interesting game mechanic, or deviation on a popular game mechanic, and then sketching out ideas that could make use of that mechanic. Since all of these games would be made for mobile devices, I wanted to make use of common control schemes that mobile games use (such as swiping and dragging), but also try to mix up the genre norms and do something a little different.
 			      		</p>
 			      		<p>
-			      		After thinking on the issue of strategy in the shooting gameplay for a bit, I also proposed a new system for how the weapons and enemies would work, that I hoped would encourage strategy on the players behalf and have them think about when they should or should not use certain weapons. This new system would have the weapons and enemies assigned to three different types (piercing, explosive and energy weapons/enemies), with each weapon type being more effective against certain enemy types as compared to others. With this implementation of a "weapon triangle" I hoped that players would have to think more carefully about which weapons to use based on the enemies in each conbat encounter, and they would have to plan on using the photon whip to steal wepaons accordingly due to its newly implemented cooldown. Allowing the player to carry two weapons at once and to be able to switch between them also helped to further the depth and strategy of the gameplay.
+			      		All of the games that I worked on were on a quick turn around (approximately 3 weeks) so I also had to consider making their scope appropriate, as I would be the only one creating the content for these games. Due to this, endless runners were a genre that were easy to develop for, since the content for those is usually procedurally generated. This allowed me to still make interesting core mechanics that could be built off of in the future, while not having to worry about content at the time that I was working on the games. The example screenshots shown in this portfolio are for the games Cyber City Chase and Geometate, both endless runners in a way, but with completely different playstyles and approaches.
 			      		</p>      
 
 			      </section>
@@ -152,7 +152,7 @@
 			      <section id="project4-implementation">
 			      		<h4>Process - Implementation</h4>
 			      		<p>
-			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts. If I were to go back and work on the game, I would probably put even more of a focus on the whip, and possibly get rid of or minimize the weapon triangle mechanic, and focus on fights with larger enemies and mobility, similar to Shadow of the Colossus. 
+			      		After sketching out ideas for whatever game we were working on, I would go over the different ideas with my other co-worker on the project. We would discuss the pros and cons of each idea, and see which were more interesting or feasible than others. Once an idea had been decided on, I would type up a design document for it, and then my co-worker would begin programming a basic prototype of the game in Unity, while I would begin work on art assets, UI elements and any needed level design (such as difficulty progression or the variety and type of elements to be procedurally generated).
 			      		</p>    
 
 			      </section>
@@ -169,7 +169,7 @@
 			      <section id="project4-iteration">
 			      		<h4>Process - Tweaking and Refining</h4>
 			      		<p>
-			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts. If I were to go back and work on the game, I would probably put even more of a focus on the whip, and possibly get rid of or minimize the weapon triangle mechanic, and focus on fights with larger enemies and mobility, similar to Shadow of the Colossus. 
+			      		Once the prototype for each game had been created by my co-worker, I would begin to implement all of my assets and start working on balancing the game. This would usually involve running the game through and seeing if it matched my hypothesis prior to playing, and then adjusting or even adding values as needed. I would also check to see if the controls for each game felt natural, and if something needed to be changed in terms of how the player progressed, or if there was a gradual difficulty curve present. At this point I would usually also start work on the music and sound effects for the game, creating most of the original music for the games in Cubase.
 			      		</p>    
 			      </section>
 
@@ -182,30 +182,18 @@
 				<div class="grid-row portfolio-paragraph-spacer">
 
 				  <!-- Project results/reflection write up -->
-			      <section id="project4-result">
-			      		<h4>The Result</h4>
+			      <section id="project4-takeaway">
+			      		<h4>The Takeaway</h4>
 			      		<p>
-			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts. If I were to go back and work on the game, I would probably put even more of a focus on the whip, and possibly get rid of or minimize the weapon triangle mechanic, and focus on fights with larger enemies and mobility, similar to Shadow of the Colossus. 
-			      		</p>    
+			      		One of the most important things I learned from my time at airG was to accept failure, and to use it to help in learning what to do differently next time. At the completion of my year of working at airG, I had designed multiple features for Big Barn World, and had also lead a team of two to create multiple, original games from scratch. Many of the feature designs or games that I created were scrapped, or just did not work out how I expected, but from each failure I learned something new that could be used for the next project. Failure is a natural part of the design process, but often in school projects failure does not come about in such a way that you have to scrap the entire project. As a project lead at airG, it was sometimes even my decision to scrap a project, which was usually a very difficult thing to do. I knew though that I could still take the pieces and ideas that had made up that project, and put them to use elsewhere, learning from each failure and make it a stepping stone to something bigger and better.
+			      		</p> 
+			      		<p>
+			      		One of the other primary things I learned while working at airG is how to design games for mobile. Before this job, I had not done a lot of game design for mobile, and this job taught me a lot about how to approach designing for it. This was true for both the user side of things and also for the business side of things. For the user side of things, I learned a lot about how users will typically interact with a mobile game interface, and how to make elements apparent to users without making them overbearing. I felt it was especially important that users be able to pick up and play the games I designed without even looking at the tutorial, at least in so far as them understanding the basic controls. On the business side of things, I also learned how to design with monetization in mind, as most mobile games do not make their money with an upfront purchase, but instead through micro transactions or other paid services. While this is not my favourite approach, I still think it is useful to have an understanding of how monetization can affect game design. 
+			      		</p>   
 			      </section>
 
 			    </div>
 			    <img class="project-image-container" src="img/project4-8.png" alt="Project 4 Image">
-			</div>
-
-			<div class="wrapper">
-
-				<div class="grid-row portfolio-paragraph-spacer">
-
-				  <!-- Project results/reflection write up -->
-			      <section id="project4-takeaway">
-			      		<h4>The Takeaway</h4>
-			      		<p>
-			      		The final game featured five complete levels designed and created by me, with a boss fight on the last level that made full use of the photon whip mechanic. The game also featured an upgrade system that made use of the collectible gems that players could find, and a narrative that aimed to connect all of the levels together and tie them into the boss fight. Partway through development we also decided to use the photon whip as a movement mechanic, allowing the player to latch it on to walls and pull themselves towards them. This mechanic was featured heavily in the boss battle, and after final testing and showing off the game, we realized that the movement with the whip actually ended up being one of the most enjoyable parts. If I were to go back and work on the game, I would probably put even more of a focus on the whip, and possibly get rid of or minimize the weapon triangle mechanic, and focus on fights with larger enemies and mobility, similar to Shadow of the Colossus. 
-			      		</p>    
-			      </section>
-
-			    </div>
 			</div>
 
 			<!-- Locked Bottom Footer -->

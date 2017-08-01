@@ -8,8 +8,7 @@
 
     <link href="css/styleguide.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/details.css" rel="stylesheet">
-    <link href="css/crate_list.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
     <link href="css/grids.css" rel="stylesheet">
 
   </head>
@@ -57,59 +56,73 @@
 
         <div class="text-spacer">
         <h3>Rendered Element:</h3>
-        <h1><a href="index.html" class="main-nav-header-example">WHAT I'VE DONE</a></h1>
+        <div class="header-right">
+          <h1><a href="about.html" class="main-nav-header">WHO I AM</a></h1>
+        </div>
 		    </div>
 
         <div class="text-spacer">
         <h3>CSS Selector:</h3>
-        <p>.main-nav-header-example</p>
-        </div>
-
-        <div class="text-spacer-code">
-        <h3>Sample Code:</h3>
-        <code>&lt;a href="index.html" class="main-nav-header"&gt;WHAT I'VE DONE&lt;/a&gt;</code>
-        </div>
-
-      </section>
-
-     <!-- Button Examples -->
-      <section>
-      <!--Forms Reference https://www.w3schools.com/html/html_forms.asp -->
-        <h2>Confirm/Cancel Buttons</h2>
-
-        <div class="text-spacer">
-        <h3>Rendered Element:</h3>
-			<div class="feedback-container">
-				<p>Have any feedback for this product? Let us know!</p>
-				<textarea class="form-box" placeholder="Enter your feeback here..."></textarea>
-			</div>
-		
-        	<a href="#" class="basic-button">Submit</a>
-        	<a href="#" class="basic-button2">Reset</a>
-		</div>
-
-        <div class="text-spacer">
-        <h3>CSS Selector:</h3>
-        <p>.basic-button, .basic-button2, form</p>
+        <p>.header-right, .main-nav-header</p>
         </div>
 
         <div class="text-spacer-code">
         <h3>Sample Code:</h3>
         <code>
-        	&lt;div class="feedback-container"&gt;
-				&lt;p&gt;Have any feedback for this product? Let us know!&lt;/p&gt;
-				&lt;input type="text" name="productname"&gt;&lt;br&gt;
-				&lt;textarea class="form-box" placeholder="Enter your feedback here..."&gt;&lt;textarea&gt;
-			&lt;/div&gt;
-        	&lt;a href="#" class="basic-button"&gt;Submit&lt;/a&gt;
-        	&lt;a href="#" class="basic-button2"&gt;Reset&lt;/a&gt;
+        &lt;div class="header-right"&gt;
+          &lt;a href="about.html" class="main-nav-header"&gt;WHO I AM&lt;/a&gt;
+        &lt;/div&gt;
         </code>
         </div>
 
       </section>
 
-    </section>
+      <section>
 
+      <!-- Navigation Bar Button Example -->
+
+        <h2>Navigation Button Dropdown</h2>
+
+        <div class="text-spacer">
+        <h3>Rendered Element:</h3>
+        <div class="header-right">
+          <div href="index.html" class="main-nav-header"><h1>WHAT I'VE DONE</h1>
+                    <div class="main-nav-header-dropdown">
+                      <p>
+                        <a href="project1.html">AutoNoir</a>
+                        <a href="project2.html">Havoc Gear</a>
+                        <a href="project3.html">Forlorn</a>
+                        <a href="project4.html">airG</a>
+                      </p>
+                    </div>
+           </div>
+        </div>
+        </div>
+
+        <div class="text-spacer">
+        <h3>CSS Selector:</h3>
+        <p>.header-right, .main-nav-header, .main-nav-header-dropdown</p>
+        </div>
+
+        <div class="text-spacer-code">
+        <h3>Sample Code:</h3>
+        <code>
+        &lt;div class="header-right"&gt;
+          &lt;div href="index.html" class="main-nav-header"&gt;&lt;h1&gt;WHAT I'VE DONE&lt;/h1&gt;
+            &lt;div class="main-nav-header-dropdown"&gt;
+              &lt;p&gt;
+                &lt;a href="project1.html"&gt;AutoNoir&lt;/a&gt;
+                &lt;a href="project2.html"&gt;Havoc Gear&lt;/a&gt;
+                &lt;a href="project3.html"&gt;Forlorn&lt;/a&gt;
+                &lt;a href="project4.html"&gt;airG&lt;/a&gt;
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        </code>
+        </div>
+
+      </section>
 
     <!-- // INTERACTIVE ELEMENTS SECTION -->
 
@@ -143,10 +156,10 @@
 					<h1 class="text-content">Main Heading</h1>
 				</div>
 				<div class="text-spacer">
-					<h1 class="explanation-text">2rem</h1>
+					<h1 class="explanation-text">2rem/1rem</h1>
 				</div>
 				<div class="text-spacer">
-					<h1 class="explanation-text">Normal, Uppercase</h1>
+					<h1 class="explanation-text">Normal</h1>
 				</div>
 				<div class="text-spacer">
 					<h1 class="explanation-text">h1</h1>
@@ -269,265 +282,92 @@
         <div class="text-spacer-large">
         <h3>Rendered Element:</h3>
         <div class="header-container">
-	        <div class="main-nav-container">
-	        <div class="header-link-container">
-	        		<div class="header-links">
-	        			<a href="#index" class="main-nav-header-left"><img class="header-icon" src="img/personal_icon.png" alt="CRATE Crate Icon"></a>
-	        			<a href="#crate_list" class="main-nav-header"><h1>CRATE LIST</h1></a>
-	        			<a href="#cart" class="main-nav-header"><h1>CART</h1></a>
-	        		</div>
-	        </div>
+          <div class="main-nav-container">
+            <div class="header-link-container">
+              <nav>
+                <div class="header-links">          
+                  <a href="index.html" class="main-nav-header-left"><img class="header-icon" src="img/personal_icon.png" alt="Personal Brand Icon"></a>
+                  <div class="header-right">
+                    <div href="index.html" class="main-nav-header"><h1>WHAT I'VE DONE</h1>
+                      <div class="main-nav-header-dropdown">
+                        <p>
+                          <a href="project1.html">AutoNoir</a>
+                          <a href="project2.html">Havoc Gear</a>
+                          <a href="project3.html">Forlorn</a>
+                          <a href="project4.html">airG</a>
+                        </p>
+                      </div>
+                    </div>
+                    <a href="about.html" class="main-nav-header"><h1>WHO I AM</h1></a>
+                  </div>
+                </div>
+              </nav>
+            </div>
           </div>
         </div>
 		    </div>
 
         <div class="text-spacer-medium">
         <h3>CSS Selector:</h3>
-        <p>.main-nav-container, .main-link-container, .header-links, .main-nav-header, main-nav-header-left</p>
+        <p>.header-container, .main-nav-container, .header-link-container, .header-links, .main-nav-header, main-nav-header-left, .header-right, .main-nav-header-dropdown</p>
         </div>
 
         <div class="text-spacer-code">
         <h3>Sample Code:</h3>
         <code>
-        	&lt;div class="main-nav-container"&gt;
-        	&lt;div class="header-link-container"&gt;
-	        	&lt;nav&gt;
-	        	&lt;a href="#index" class="main-nav-header"&gt;&lt;img class="header-icon" src="img/crate_icon.png" alt="CRATE Crate Icon"&gt;&lt;/a&gt;
-	        	&lt;a href="#crate_list" class="main-nav-header"&gt;&lt;h1&gt;CRATE LIST&lt;/h1&gt;&lt;/a&gt;
-	        	&lt;a href="#cart" class="main-nav-header"&gt;&lt;h1&gt;CART&lt;/h1&gt;&lt;/a&gt;
-	        	&lt;/nav&gt;
-	        &lt;/div&gt;
-	    </code>
-        </div>
-
-      </section>
-
-      <section>
-      	<h2>Drop Menu Selection</h2>
-
-      	<div class="text-large">
-      	<h3>Rendered Element:</h3>
-      	
-			<form class="dropdown-form">
-				<select class="dropdown-box-subscription">
-				    <option value="one-month">1 Month - $15</option>
-				    <option value="three-month">3 Month - $40</option>
-				    <option value="six-month">6 Month - $75</option>
-				    <option value="one-year">12 Month - $140</option>
-				</select>
-			</form>
-		</div>
-
-
-		<div class="text-spacer-medium">
-        <h3>CSS Selector:</h3>
-        <p>.dropdown-form, .dropdown-box-subscription</p>
-        </div>
-
-        <div class="text-spacer-code">
-        <h3>Sample Code:</h3>
-        <code>
-        	&lt;form class="dropdown-form"&gt;
-	        	&lt;select class="dropdown-box-subscription"&gt;
-	        		&lt;option value="one-month"&gt;1 Month - $15&lt;/option&gt;
-	        		&lt;option value="three-month"&gt;3 Month - $40&lt;/option&gt;
-	        		&lt;option value="six-month"&gt;6 Month - $75&lt;/option&gt;
-	        		&lt;option value="one-year"&gt;12 Month - $140&lt;/option&gt;
-	        	&lt;/select&gt;
-	        &lt;/form&gt;
-	    </code>
-        </div>
-
-      </section>
-
-     <!-- Example of Product Listing -->
-      <section>
-        <h2>Product Listing</h2>
-
-        <div class="text-spacer-large">
-        <h3>Rendered Element:</h3>
-
-	        <div class="grid-row">
-          <!-- Left side column with crate image and descriptive text -->
-            <section id="main-product-image">
-                <div class="grid-col-1of2 loot-info-left-container">
-
-                    <img src="img/loot_crate.jpg" alt="Loot Crate image">
-
-                <div>
-                  <p>Every month a different theme is chosen for your Loot Crate which is delivered right to your door.</p>
-                </div>
-            </div>
-
-            </section>
-
-            <!-- Right side column with ordering dropdowns and product features -->
-            <section id="product-ordering">
-              <div class="grid-col-1of2 loot-info-right-container">
-                <h2>LOOT CRATE</h2>
-
-                <!-- Subscription plan order dropdown based on example from: http://www.echoecho.com/htmlforms11.htm -->
-                <div class="subscription-container">
-                  <h3 class="dropdown-text">Subscription Plan:</h3>
-
-                  <form class="dropdown-form">
-                    <select class="dropdown-box-subscription">
-                      <option value="one-month">1 Month - $15</option>
-                      <option value="three-month">3 Month - $40</option>
-                      <option value="six-month">6 Month - $75</option>
-                      <option value="one-year">12 Month - $140</option>
-                    </select>
-                  </form>
-                </div>
-
-                <!-- T-shirt order dropdown -->
-                <div class="tshirt-container">
-                  <h3 class="dropdown-text">T-Shirt Size:</h3>
-
-                  <form class="dropdown-form-extra">
-                    <select class="dropdown-box-tshirt">
-                      <option value="one-month">Mens - Small</option>
-                      <option value="three-month">Mens - Medium</option>
-                      <option value="six-month">Mens - Large</option>
-                      <option value="one-year">Mens - Extra Large</option>
-                      <option value="one-month">Womens - Small</option>
-                      <option value="three-month">Womens - Medium</option>
-                      <option value="six-month">Womens - Large</option>
-                      <option value="one-year">Womens - Extra Large</option>
-                    </select>
-                  </form>
-                </div>
-
-                <!-- Purchase button -->
-                <div class="purchase-container">
-                  <h3 class="dropdown-text">Confirm Purchase:</h3>
-                  <div class="cart-button">
-                    <a href="checkout.html" class="basic-button">Add To Cart</a>
-                  </div>
-                </div>
-            
-              <!-- List displaying description of crate service -->
-                <h3>Loot Crate Features:</h3>
-
-                <ul>
-                   <li>4 - 6 pop culture items every month!</li>
-                   <li>Over $45+ in retail value of collectible items!</li>
-                   <li>Licensed, exclusive items you can't get anywhere else!</li>
-                </ul>
-
-            </div>
-
-            </section>
-
-          </div>
-		</div>
-
-        <div class="text-spacer-medium">
-        <h3>CSS Selector:</h3>
-        <p>.text-spacer-medium, .bottom-align, .basic-button</p>
-        </div>
-
-        <div class="text-spacer-code">
-        <h3>Sample Code:</h3>
-        <code>
-
-        	&lt;section id="main-product-image"&gt;
-                &lt;div class="grid-col-1of2 loot-info-left-container"&gt;
-
-                    &lt;img src="img/loot_crate.jpg" alt="Loot Crate image"&gt;
-
-                &lt;div&gt;
-                  &lt;p&gt;Every month a different theme is chosen for your Loot Crate which is delivered right to your door.&lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-
-            &lt;/section&gt;
-
-            &lt;section id="product-ordering"&gt;
-              &lt;div class="grid-col-1of2 loot-info-right-container"&gt;
-                &lt;h2&gt;LOOT CRATE&lt;/h2&gt;
-
-                &lt;div class="subscription-container"&gt;
-                  &lt;h3 class="dropdown-text"&gt;Subscription Plan:&lt;/h3&gt;
-
-                  &lt;form class="dropdown-form"&gt;
-                    &lt;select class="dropdown-box-subscription"&gt;
-                      &lt;option value="one-month"&gt;1 Month - $15&lt;/option&gt;
-                      &lt;option value="three-month"&gt;3 Month - $40&lt;/option&gt;
-                      &lt;option value="six-month"&gt;6 Month - $75&lt;/option&gt;
-                      &lt;option value="one-year"&gt;12 Month - $140&lt;/option&gt;
-                    &lt;/select&gt;
-                  &lt;/form&gt;
-                &lt;/div&gt;
-
-                &lt;div class="tshirt-container"&gt;
-                  &lt;h3 class="dropdown-text"&gt;T-Shirt Size:&lt;/h3&gt;
-
-                  &lt;form class="dropdown-form-extra"&gt;
-                    &lt;select class="dropdown-box-tshirt"&gt;
-                      &lt;option value="one-month"&gt;Mens - Small&lt;/option&gt;
-                      &lt;option value="three-month"&gt;Mens - Medium&lt;/option&gt;
-                      &lt;option value="six-month"&gt;Mens - Large&lt;/option&gt;
-                      &lt;option value="one-year"&gt;Mens - Extra Large&lt;/option&gt;
-                      &lt;option value="one-month"&gt;Womens - Small&lt;/option&gt;
-                      &lt;option value="three-month"&gt;Womens - Medium&lt;/option&gt;
-                      &lt;option value="six-month"&gt;Womens - Large&lt;/option&gt;
-                      &lt;option value="one-year"&gt;Womens - Extra Large&lt;/option&gt;
-                    &lt;/select&gt;
-                  &lt;/form&gt;
-                &lt;/div&gt;
-
-                &lt;div class="purchase-container"&gt;
-                  &lt;h3 class="dropdown-text"&gt;Confirm Purchase:&lt;/h3&gt;
-                  &lt;div class="cart-button"&gt;
-                    &lt;a href="checkout.html" class="basic-button"&gt;Add To Cart&lt;/a&gt;
+          &lt;div class="header-container"&gt;
+          	&lt;div class="main-nav-container"&gt;
+            	&lt;div class="header-link-container"&gt;
+    	        	&lt;nav&gt;
+      	        	&lt;div class="header-links"&gt;         
+                  &lt;a href="index.html" class="main-nav-header-left"&gt;&lt;img class="header-icon" src="img/personal_icon.png" alt="Personal Brand Icon"&gt;&lt;/a&gt;
+                    &lt;div class="header-right"&gt;
+                      &lt;div href="index.html" class="main-nav-header"&gt;&lt;h1&gt;WHAT I'VE DONE&lt;/h1&gt;
+                        &lt;div class="main-nav-header-dropdown"&gt;
+                          &lt;p&gt;
+                            &lt;a href="project1.html">AutoNoir&lt;/a&gt;
+                            &lt;a href="project2.html">Havoc Gear&lt;/a&gt;
+                            &lt;a href="project3.html">Forlorn&lt;/a&gt;
+                            &lt;a href="project4.html">airG&lt;/a&gt;
+                          &lt;/p&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;a href="about.html" class="main-nav-header"&gt;&lt;h1>WHO I AM&lt;/h1&gt;&lt;/a&gt;
+                    &lt;/div&gt;
                   &lt;/div&gt;
-                &lt;/div&gt;
-            
-                &lt;h3&gt;Loot Crate Features:&lt;/h3&gt;
-
-                &lt;ul&gt;
-                   &lt;li&gt;4 - 6 pop culture items every month!&lt;/li&gt;
-                   &lt;li&gt;Over $45+ in retail value of collectible items!&lt;/li&gt;
-                   &lt;li&gt;Licensed, exclusive items you can't get anywhere else!&lt;/li&gt;
-                &lt;/ul&gt;
-
-            &lt;/div&gt;
-
-            &lt;/section&gt;
-        
+    	        	&lt;/nav&gt;
+              &lt;/div&gt;
+  	        &lt;/div&gt;
+          &lt;/div&gt;
 	    </code>
         </div>
-
       </section>
 
      <!-- Category Listing Example -->
       <section>
-      	<h2>Category Listing</h2>
+      	<h2>Home Page Category Image</h2>
       	<div class="text-spacer-large">
       	<h3>Rendered Elements:</h3>
-      		<a href="#categories"><div class="category-container">
-      		<div class="category-fix">
-      		<img src="img/books_example.jpg" alt="Category Example">
-      		<h2>Books</h2>
-      		<p class="category-spacer">Science fiction, biographies, history, any type of book you could want!</p>
-      		</div>
-      		</div></a>
+        <div class="grid-col-1of2alt">
+      		<a href="project4.html"><div class="category-container">
+            <div class="category-image-4"></div>  
+          </div></a>
+        </div>
       	</div>
 
       	<div class="text-spacer-medium">
       	<h3>CSS Selector:</h3>
-      	<p>.category-container, .category-spacer</p>
+      	<p>.category-container, .category-image-4</p>
       	</div>
 
       	<div class="text-spacer-code">
       	<h3>Sample Code:</h3>
       	<code>
-      		&lt;a href="#categories"&gt;&lt;div class="category-container"&gt;
-      		&lt;img src="img/books_exmaple.jpg" alt="Category Example"&gt;
-      		&lt;h2&gt;Books&lt;/h2&gt;
-      		&lt;p class="category-spacer"&gt;Science fiction, biographies, history, any type of book you could want!&lt;/p&gt;
-      		&lt;/div&gt;&lt;/a&gt;
+      		&lt;div class="grid-col-1of2alt"&gt;
+            &lt;a href="project4.html"&gt;&lt;div class="category-container"&gt;
+              &lt;div class="category-image-4"&gt;&lt;/div&gt; 
+            &lt;/div&gt;&lt;/a&gt;
+          &lt;/div&gt;
       	</code> 
       	</div>
       </section>
@@ -538,172 +378,59 @@
       	<h2>Page Footer</h2>
       	<div class="text-spacer-large">
       	<h3>Rendered Elements:</h3>
-      		<div class="main-footer-nav-container">
-      		<div class="footer-content-container">
-      			<div class="footer-content">
-      				<div class="footer-fix">
-      					<h3 class="footer-text">Follow Us: </h3>
-			        	<a href="#gmail">
-			        	<img class="footer-icon" src="img/email.png" alt="Contact Icons"></a>
+      	<div class="footer-container">
+          <div class="main-footer-nav-container">
+            <div class="footer-content-container">
+              <div class="footer-content">
+                <h3 class="footer-text">Follow Me: </h3>
+                <a href="styleguide.html">
+                <img class="footer-icon" src="img/email.png" alt="Contact Icons"></a>
 
-			  			<a href="#facebook">
-			        	<img class="footer-icon" src="img/facebook.png" alt="Contact Icons"></a>
+              <a href="citations.html">
+                <img class="footer-icon" src="img/facebook.png" alt="Contact Icons"></a>
 
-			        	<a href="#twitter">
-			        	<img class="footer-icon" src="img/twitter.png" alt="Contact Icons"></a>
+                <a href="https://github.com/Humula/Kevin_Portfolio">
+                <img class="footer-icon" src="img/twitter.png" alt="Contact Icons"></a>
 
-			        	<a href="#youtube">
-			        	<img class="footer-icon" src="img/youtube.png" alt="Contact Icons"></a>
-
-			        	<a href="#snapchat">
-			        	<img class="footer-icon" src="img/snapchat.png" alt="Contact Icons"></a>
-			        </div>
-      			</div>
-      		</div>
-      		</div>
+                <a href="https://www.youtube.com">
+                <img class="footer-icon" src="img/youtube.png" alt="Contact Icons"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
 
       	<div class="text-spacer-medium">
       	<h3>CSS Selector:</h3>
-      	<p>.main-footer-nav-container, .footer-content-container, .footer-content,
+      	<p>.footer-container, .main-footer-nav-container, .footer-content-container, .footer-content,
       	.footer-icon, .footer-text</p>
       	</div>
 
       	<div class="text-spacer-code">
       	<h3>Sample Code:</h3>
       	<code>
+        &lt;div class="footer-container"&gt;
       		&lt;div class="main-footer-nav-container"&gt;
-      		&lt;div class="footer-content-container"&gt;
-      			&lt;div class="footer-content"&gt;
-      					&lt;h3 class="footer-text"&gt;Follow Us: &lt;/h3&gt;
-			        	&lt;a href="#gmail"&gt;
-			        	&lt;img class="footer-icon" src="img/email.png" alt="Contact Icons"&gt;&lt;/a&gt;
+        		&lt;div class="footer-content-container"&gt;
+        			&lt;div class="footer-content"&gt;
+        					&lt;h3 class="footer-text"&gt;Follow Me: &lt;/h3&gt;
+  			        	&lt;a href="styleguide.html"&gt;
+  			        	&lt;img class="footer-icon" src="img/email.png" alt="Contact Icons"&gt;&lt;/a&gt;
 
-			  			&lt;a href="#facebook"&gt;
-			        	&lt;img class="footer-icon" src="img/facebook.png" alt="Contact Icons"&gt;&lt;/a&gt;
+  			  			  &lt;a href="#citations.html"&gt;
+  			        	&lt;img class="footer-icon" src="img/facebook.png" alt="Contact Icons"&gt;&lt;/a&gt;
 
-			        	&lt;a href="#twitter"&gt;
-			        	&lt;img class="footer-icon" src="img/twitter.png" alt="Contact Icons"&gt;&lt;/a&gt;
+  			        	&lt;a href="https://github.com/Humula/Kevin_Portfolio"&gt;
+  			        	&lt;img class="footer-icon" src="img/twitter.png" alt="Contact Icons"&gt;&lt;/a&gt;
 
-			        	&lt;a href="#youtube"&gt;
-			        	&lt;img class="footer-icon" src="img/youtube.png" alt="Contact Icons"&gt;&lt;/a&gt;
-
-			        	&lt;a href="#snapchat"&gt;
-			        	&lt;img class="footer-icon" src="img/snapchat.png" alt="Contact Icons"&gt;&lt;/a&gt;
-      			&lt;/div&gt;
-      		&lt;/div&gt;
+  			        	&lt;a href="#youtube"&gt;
+  			        	&lt;img class="footer-icon" src="img/youtube.png" alt="Contact Icons"&gt;&lt;/a&gt;
+        			&lt;/div&gt;
+        		&lt;/div&gt;
       		&lt;/div&gt;
       	</code> 
       	</div>
       </section>
-
-    <!-- Featured Product Example -->
-      <section>
-      	<h2>Featured Product</h2>
-      	<div class="text-spacer-large">
-      	<h3>Rendered Elements:</h3>
-
-	<!-- Featured product image and information -->
-		<section id="featured-product">
-			<div class="grid-col-1of2 home-product-container">
-
-				<h2>Featured Product!</h2>
-
-					<img class= "home-product-image" src="img/gaming3.png" alt="Featured product image">
-
-			    <div class="column-container-text">
-					<h3>Loot Anime</h3>
-					<p>A collection of anime memorabilia and figures! Featuring characters from all of your favourite anime like Bleach, Naruto, Zatch Bell and Berserk.</p>
-					<a href="#crate-list" class="basic-button button-top-spacer">Get Loot Anime</a>
-				</div>
-			</div>
-		</section>
-
-      	<div class="text-spacer-medium">
-      	<h3>CSS Selector:</h3>
-      	<p>.grid-col-1of2 home-product-container, .home-product-image, .column-container-text, .basic-button button-top-spacer</p>
-      	</div>
-
-      	<div class="text-spacer-code">
-      	<h3>Sample Code:</h3>
-      	<code>
-			&lt;section id="featured-product"&gt;
-			    &lt;div class="grid-col-1of2 home-product-container"&gt;
-
-			    	&lt;h2&gt;Featured Product!&lt;/h2&gt;
-
-					    &lt;img class= "home-product-image" src="img/gaming3.png" alt="Featured product image"&gt;
-
-			        	&lt;div class="column-container-text"&gt;
-						    &lt;h3&gt;Loot Anime&lt;/h3&gt;
-						    &lt;p&gt;A collection of anime memorabilia and figures! Featuring characters from all of your favourite anime like Bleach, Naruto, Zatch Bell and Berserk.&lt;/p&gt;
-						    &lt;a href="crate_list.html" class="basic-button button-top-spacer"&gt;Get Loot Anime&lt;/a&gt;
-						&lt;/div&gt;
-				&lt;/div&gt;
-
-			&lt;/section&gt;
-      	</code> 
-      	</div>
-      </section>
-
-
-      <!-- About Website Example -->
-      <section>
-      	<h2>About Us Information</h2>
-      	<div class="text-spacer-large">
-      	<h3>Rendered Elements:</h3>
-
-		<section id="company-information">
-			<div class="grid-row about-container">
-
-				<div class="grid-col-1of2">
-					<div class="about-image-container">
-						<div class="about-image"></div>
-					</div>
-				</div>
-
-				<div class="grid-col-1of2">
-					<div class="about-container-text">
-						<h3>About CRATE Crate</h3>
-						<p>CRATE Crate is a monthly subscription service that provides you with all of the items that you want, directly to your door. If you're tired of subscribing to multiple crate delivservices, try using CRATE Crate!</p>
-						<p> We'll take items from each crate that you put in your order, and combine them into one mega CRATE which we ship directly to you. Now you can get all of your favourite montsubscription items with less hassle and for a lower cost!</p>
-						<p>Featuring crate services such as Loot Crate, Loot Anime, NatureBox, Graze, Birchbox, Harry's, Dollar Shave Club, and many more, we're sure to have everything that you'll need!</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-      	<div class="text-spacer-medium">
-      	<h3>CSS Selector:</h3>
-      	<p>.grid-row about-container, .about-image-container, .about-container-text</p>
-      	</div>
-
-      	<div class="text-spacer-code">
-      	<h3>Sample Code:</h3>
-      	<code>
-		&lt;section id="company-information"&gt;
-			&lt;div class="grid-row about-container"&gt;
-
-				&lt;div class="grid-col-1of2"&gt;
-					&lt;div class="about-image-container"&gt;
-						&lt;div class="about-image"&gt;&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-
-				&lt;div class="grid-col-1of2"&gt;
-					&lt;div class="about-container-text"&gt;
-						&lt;h3&gt;About CRATE Crate&lt;/h3&gt;
-						&lt;p&gt;CRATE Crate is a monthly subscription service that provides you with all of the items that you want, directly to your door. If you're tired of subscribing to multiple crate delivservices, try using CRATE Crate!&lt;/p&gt;
-						&lt;p&gt; We'll take items from each crate that you put in your order, and combine them into one mega CRATE which we ship directly to you. Now you can get all of your favourite montsubscription items with less hassle and for a lower cost!&lt;/p&gt;
-						&lt;p&gt;Featuring crate services such as Loot Crate, Loot Anime, NatureBox, Graze, Birchbox, Harry's, Dollar Shave Club, and many more, we're sure to have everything that you'll need!&lt;/p&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/section&gt;
-      	</code> 
-      	</div>
-      </section>
-
-    </section>
 
    <!-- Grid Structure Example -->
     <section>
@@ -713,10 +440,10 @@
         		</div>
         <h3>Two Column Grid</h3>
         <div class="grid-row">
-          <div class="grid-col-1of2">
+          <div class="grid-col-1of2alt">
 					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 				  </div>
-				  <div class="grid-col-1of2">
+				  <div class="grid-col-1of2alt">
 					<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 				  </div>
 		    </div>
